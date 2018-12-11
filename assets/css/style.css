@@ -1,4 +1,51 @@
 body {
-    background-color: red;
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto;
 
+
+}
+
+
+
+#titleImageDiv {
+    background-image: url('../images/LogoGameOfThrones.png');
+    height: 300px;
+    margin: -20px 0 0;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+#wordGuessGameDiv {
+    text-align: center;
+    margin: -40px 0 50px;
+    border-bottom: 1px solid white;
+    border-width: 50%;
+
+}
+
+#wordGuessImage {
+    width: 60%;
+    padding-bottom: 30px;
+
+}
+
+/* #throneImage {
+    width: 100%;
+    height: 100%;
+} */
+
+#throne {
+    background-image: url('../images/gameOfthronesBackground.jpg');
+    background-size: 300% 100%;
+    background-position: center;
+}
+
+
+#alignMiddle {
+    text-align: center;
+}
+
+#innerRows {
+    padding: 30px 0;
 }
