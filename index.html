@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess Game</title>
+    <meta name="author" content=Louis Carter>
     <!-- ======== Eric Meyer Reset ======= -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <!-- ======= Boot Stap Css ======= -->
@@ -21,119 +22,63 @@
     <!-- Main container -->
     <div class="container-fluid">
         <div class="row" id="titleImageDiv">
-            <div class="col-12">
+            <div class="col-12" id="titleImageDivCol">
+
+                <img src="./assets/images/LogoGameOfThrones.png" width="50%" height="200">
             </div><!-- end of col-12 -->
         </div><!-- end of the row/titleImage -->
-        <div class="row">
-            <div class="col-12" id="wordGuessGameDiv">
-                <img src="/assets/images/wordGuessGameFont.png" alt="" id="wordGuessImage">
-            </div>
-        </div>
         <div class="container">
-
             <!-- left -->
+            <div class="row" id="characterImgDiv">
+                <div class="col-lg-6">
 
-            <div class="row">
-                <div class="col-4">
+                    <!--Changing Image based on correct answers-->
+                    <h1>Press Any Key To Guess A Character!</h1>
+                    <h5 id="hiddenH5">**Hint** Take a good look at the picture of characters as you will
+                        only see them
+                        once.
 
-                    this is the left column
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi a cumque aliquam! Perferendis quae
-                    dolorem illum, nulla cumque vel. Nobis, saepe molestiae earum, reprehenderit veniam inventore quia
-                    ipsam at alias dolor debitis, ipsum voluptates dolorum quod consectetur similique optio
-                    consequuntur!
+                    </h5>
+                    <h3 id="names"></h3>
+                    <div>
+                        <img id="image" src="/assets/images/Gameofthronescharecters.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
                 </div><!-- end of the left column -->
+                <div class="col-lg-6" id="alignRight">
+                    <div class="col-12" id="innerRows">
+                        <h3>WINS:
+                            <span id="winstracker"></span>
+                        </h3>
+                        <h3>LOSSES:
+                            <span id="losstracker"></span>
+                        </h3>
+                    </div><!-- end of the row 1/4 -->
+                    <div class="col-12" id="innerRows">
 
-
-                <div class="col-4">
-
-                    this is the middle column
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem non recusandae similique? Vitae
-                    neque voluptate consequatur praesentium mollitia doloremque voluptatibus harum quod, expedita
-                    facere a ipsum atque fuga reiciendis maiores magnam commodi numquam et molestias perspiciatis quia
-                    at ipsam.
-                </div> <!-- end of the middle column -->
-
-
-
-                <div class="col-4" id="alignMiddle">
-
-                    <div class="row">
-                        <div class=" col-12" id="innerRows">
-                            Press any key to get started
-                        </div><!-- end of the row 1/5 -->
-
-
-                        <div class="col-12" id="innerRows">
-
-                            Wins #
-                        </div><!-- end of the row 2/5 -->
-
-                        <div class="col-12" id="innerRows">
-
-                            Current Word
-                        </div><!-- end of the row 3/5 -->
-
-                        <div class="col-12" id="innerRows">
-
-                            Number of Guesses Remaining
-                        </div><!-- end of the row 4/5 -->
-
-                        <div class="col-12" id="innerRows">
-
-                            Letters already used
-                        </div><!-- end of the row 5/5 -->
-
-
-                    </div> <!-- end of the right column inner row -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div><!-- end of the right column -4  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            </div><!-- end of the outter  row -->
-
-
-        </div><!-- end of the container -->
+                        <h3>Current Word</h3>
+                        <h3 id="currentword">_ _ _ _ _</h3>
+                    </div><!-- end of the row 2/4 -->
+                    <div class="col-12" id="innerRows">
+                        <h3>Number of Guesses Remaining:
+                            <span id="guessesremaining"></span>
+                        </h3>
+                    </div><!-- end of the row 3/4 -->
+                    <div class="col-12" id="innerRows">
+                        <h3>LETTERS YOU GUESSED WRONG:
+                            <span id="playerguesses"></span>
+                    </div><!-- end of the row 4/4 -->
+                </div> <!-- end of the right column inner row -->
+            </div><!-- end of the right column -4  -->
+        </div><!-- end of the outter  row -->
+    </div><!-- end of the container -->
     </div><!-- end of the container-fluid -->
 
+    <!--AUDIO FILES-->
+    <audio controls autoplay loop>
+        <source src="./assets/audio/GameOfthronesExtended.mp3" type="audio/mpeg">
+    </audio>
 
-
-
-
-
-
-
-
-
-
+    </div>
 
     <!-- ======= Main Javascript ======= -->
     <script src="./assets/javascript/game.js"></script>
