@@ -2,7 +2,7 @@ body {
     background-color: #000;
     color: #fff;
     margin: 0 auto;
-    background-image: url(../images/smokebackgroundd.jpg);
+    background-image: url('../images/winterIscoming.jpg');
     background-repeat: none;
     font-family: sans-serif
 }
@@ -11,11 +11,19 @@ body {
     text-align: center;
 }
 
+#characterImgDiv h1 {
+font-size:30px
+
+}
+
+
+
 #characterImgDiv h1,
 h5,
 h3 {
     padding-bottom: 5px;
     text-align: center;
+    line-height: 30px;
 }
 
 #characterImgDiv img {
